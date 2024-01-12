@@ -48,4 +48,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: carlenekp/flask-app:latest
+        tags: carlenekp/full-flask-app:latest
