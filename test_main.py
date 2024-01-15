@@ -2,11 +2,6 @@ from typing import ItemsView
 import unittest
 from app import app
 
-import  jpype     
-import  asposecells     
-jpype.startJVM() 
-from asposecells.api import Workbook
-
 
 class TestFlaskApp(unittest.TestCase):
     
