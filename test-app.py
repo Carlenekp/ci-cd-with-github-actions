@@ -15,17 +15,16 @@ class TestAppE2E(unittest.TestCase):
     def test_add_and_delete_item(self):
         # you can use the driver to find elements in the page
         # example:
-        """input_field = self.driver.find_element_by_name('item')"""
+        
         # this refers to the 'name="item"' attribute of the html element
         # checkout the rest of the methods in the documentation:
         # https://selenium-python.readthedocs.io/locating-elements.html
         
         # after you select your element, you can send it a key press:
-        """input_field.send_keys('New E2E Item')"""
-        """input_field.send_keys(Keys.RETURN)"""
+       
         
         # and you can use the rest of the assetion methods as well:
-        """self.assertIn('New E2E Item', self.driver.page_source)"""
+       
         item = self.driver.find_element(By.NAME, 'item')
         item.send_keys('New E2E Item')
         item.send_keys(Keys.RETURN)
